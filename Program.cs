@@ -12,7 +12,7 @@ namespace Api
 
             //var users = "users"; 
 
-            var request = new GetRequest($"https://reqres.in/api/users?page=1"); //образаемся к апи
+            var request = new GetRequest($"https://reqres.in/api/users?page=1"); //образаемся к апиsss
 
             request.Run();
 
