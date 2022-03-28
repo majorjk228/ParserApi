@@ -12,7 +12,13 @@ namespace Api
 
             //var users = "users"; 
 
-            var request = new GetRequest($"https://reqres.in/api/users?page=1"); //образаемся к апиsss
+            var clid = "ak220315";
+
+            var apikey = "TqOJqLrboDMwXfmIdvgQGygNHySFXLUvsuyIGV";
+
+            //var request = new GetRequest($"https://reqres.in/api/users?page=1"); //образаемся к апиsss
+
+            var request = new GetRequest($"https://taxi-routeinfo.taxi.yandex.net/taxi_info?clid={clid}&apikey={apikey}&rll=<lon,lat~lon,lat>&class=<class_str>&req=<req_str>"); //образаемся к апиsss
 
             request.Run();
 
